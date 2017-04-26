@@ -121,12 +121,12 @@ set backspace=indent,eol,start
 ""set expandtab
 
 " Tabs as four spaces
-set smarttab
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set shiftround
+"set smarttab
+"set tabstop=4
+"set softtabstop=4
+"set shiftwidth=4
+"set shiftround
+"set expandtab
 
 "" Map leader to ,
 let mapleader=','
@@ -420,3 +420,11 @@ noremap ,o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=lin
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+"Set default expandtab
+set smarttab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set shiftround
+set expandtab
